@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Altaf Hussain — Filmmaker, Editor & Content Strategist</title>
+  <meta name="description" content="Cinematic real-estate films, brand films and ad creative — planned as strategy, cut as story, measured in revenue." />
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <meta property="og:title" content="Syed Altaf Hussain — Filmmaker, Editor & Content Strategist" />
+  <meta property="og:description" content="Cinematic real-estate films, brand films and ad creative — planned as strategy, cut as story, measured in revenue." />
+  <meta property="og:image" content="https://syedi786.github.io/img/og.jpg" />
+  <meta property="og:url" content="https://syedi786.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="grain"></div>
+  <div class="mesh"></div>
+
+  <div class="playhead"><div class="playhead__bar" id="playheadBar"></div></div>
+  <div class="timecode"><span class="timecode__dot"></span><span id="timecodeText">TC 00:00:00:00</span></div>
+
+  <nav class="nav" id="nav">
+    <a class="nav__logo" href="#top">SYED ALTAF<em>&nbsp;HUSSAIN</em></a>
+    <div class="nav__links">
+      <a href="#work">Work</a>
+      <a href="#results">Results</a>
+      <a href="#process">Process</a>
+      <a href="#clients">Clients</a>
+    </div>
+    <a class="nav__cta" href="mailto:altafsyed2002@gmail.com">Start a project</a>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#work">Work</a>
+    <a href="#results">Results</a>
+    <a href="#process">Process</a>
+    <a href="#clients">Clients</a>
+    <a href="mailto:altafsyed2002@gmail.com">Start a project</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ================= INTRO FILM (to remove: set SHOW_INTRO = false at the top of js/main.js) ================= -->
+    <section class="intro" id="intro">
+      <video id="introVideo" data-src="intro.mp4" muted playsinline preload="auto"></video>
+      <div class="intro__hint" id="introHint">Scroll to roll</div>
+    </section>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero__bg">
+        <img src="img/portrait.png" alt="Syed Altaf Hussain" />
+      </div>
+      <div class="hero__inner">
+        <div class="hero-ticker" data-reveal aria-label="Filmmaker, Editor, Content Strategist — Hyderabad">
+          <div class="hero-ticker__track">
+            <span>Filmmaker</span><span>Editor</span><span>Content Strategist</span><span>Hyderabad</span>
+            <span>Filmmaker</span><span>Editor</span><span>Content Strategist</span><span>Hyderabad</span>
+          </div>
+        </div>
+        <h1 data-reveal>
+          Stories shot like <em>cinema,</em><br />
+          engineered to convert.
+        </h1>
+        <p class="lede hero__lede" data-reveal>
+          Real-estate films, brand films and ad creative — planned as strategy,
+          cut as story, and measured in the only metric that matters: what it made you.
+        </p>
+        <div class="hero__ctas" data-reveal>
+          <a class="btn btn--amber" href="#work">Watch the work <span class="btn__orb">▸</span></a>
+          <a class="btn btn--ghost" href="mailto:altafsyed2002@gmail.com">Start a project <span class="btn__orb">↗</span></a>
+        </div>
+      </div>
+      <div class="hero__meta">
+        <span>4K · Cinema-grade</span>
+        <span>AI production pipeline</span>
+        <span>Strategy before shot list</span>
+      </div>
+    </section>
+
+    <!-- ================= CAPABILITY MARQUEE ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Real Estate Films</span><span>AI Cinematography</span><span>AI Ad Creative</span>
+        <span>Content Strategy</span><span>UGC Content</span><span>Post-Production</span><span>Reels &amp; Shorts</span>
+        <span>Real Estate Films</span><span>AI Cinematography</span><span>AI Ad Creative</span>
+        <span>Content Strategy</span><span>UGC Content</span><span>Post-Production</span><span>Reels &amp; Shorts</span>
+      </div>
+    </div>
+
+    <!-- ================= WORK: PINNED FILM STRIP ================= -->
+    <section class="work" id="work">
+      <div class="wrap work__head">
+        <span class="eyebrow" data-reveal>Selected work</span>
+        <h2 class="display-2" data-reveal>Three crafts. <em>One camera-first brain.</em></h2>
+        <p class="lede" data-reveal>Scroll through the strip — every still below is from a real delivery, and the full reels are one section down.</p>
+      </div>
+
+      <div class="strip" id="strip">
+        <div class="strip__viewport">
+          <div class="strip__track" id="stripTrack">
+
+            <!-- REPLACE: your real-estate walkthrough reel / thumbnail -->
+            <article class="frame">
+              <div class="frame__media">
+                <img src="reels/villa.jpg" alt="Real estate walkthrough film still" />
+                <span class="frame__tc">00:00:14:22</span>
+                <span class="frame__play">▸</span>
+              </div>
+              <div class="frame__body">
+                <div>
+                  <h3>Real Estate Walkthroughs</h3>
+                  <p>Films that sell the life, not the floor plan. Gliding one-take walkthroughs, golden-hour exteriors, and edits paced to keep a buyer watching to the last room.</p>
+                </div>
+                <span class="frame__tag">Property films</span>
+              </div>
+            </article>
+
+            <article class="frame">
+              <div class="frame__media">
+                <img src="reels/tfi.jpg" alt="Brand film still" />
+                <span class="frame__tc">00:01:02:08</span>
+                <span class="frame__play">▸</span>
+              </div>
+              <div class="frame__body">
+                <div>
+                  <h3>Brand Films</h3>
+                  <p>The story of a business, told like a film. Launch teasers, brand journeys and craft close-ups — shot and cut so the brand is remembered, not just seen.</p>
+                </div>
+                <span class="frame__tag">Brand storytelling</span>
+              </div>
+            </article>
+
+            <!-- REPLACE: your AI ads showcase -->
+            <article class="frame">
+              <div class="frame__media">
+                <img src="reels/burgeronaa.jpg" alt="AI ad creative still" />
+                <span class="frame__tc">00:00:29:11</span>
+                <span class="frame__play">▸</span>
+              </div>
+              <div class="frame__body">
+                <div>
+                  <h3>AI Ads</h3>
+                  <p>Ad creative at the speed of the feed. Hook-first variants tested against each other, so the creative that wins is the one the audience already voted for.</p>
+                </div>
+                <span class="frame__tag">Performance creative</span>
+              </div>
+            </article>
+
+            <article class="frame frame--cta">
+              <h3>Your project is<br />the next frame.</h3>
+              <p>One conversation is enough to know if we should make something together.</p>
+              <a class="btn btn--amber" href="mailto:altafsyed2002@gmail.com">Book a call <span class="btn__orb">↗</span></a>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROOF OF WORK ================= -->
+    <section class="section-pad proof" id="proof" style="padding-bottom:0">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>Proof of work</span>
+        <h2 class="display-2" data-reveal style="margin:1.4rem 0 0.8rem">Straight from <em>the timeline.</em></h2>
+        <p class="lede" data-reveal>Real deliveries for real clients. Hover any frame to play — click for sound.</p>
+      </div>
+      <div class="reelrow" id="reelrow" data-reveal>
+        <article class="reel reel--wide">
+          <video data-src="reels/villa.mp4" poster="reels/villa.jpg" muted loop playsinline preload="none"></video>
+          <div class="reel__meta"><strong>SMD Tranquil Villa</strong><span>Real-estate film</span></div>
+          <span class="reel__sound">Sound off</span>
+        </article>
+        <article class="reel reel--tall">
+          <video data-src="reels/godrej.mp4" poster="reels/godrej.jpg" muted loop playsinline preload="none"></video>
+          <div class="reel__meta"><strong>Godrej Properties</strong><span>UGC content</span></div>
+          <span class="reel__sound">Sound off</span>
+        </article>
+        <article class="reel reel--wide">
+          <video data-src="reels/tfi.mp4" poster="reels/tfi.jpg" muted loop playsinline preload="none"></video>
+          <div class="reel__meta"><strong>Taskforce Interiors</strong><span>Brand journey</span></div>
+          <span class="reel__sound">Sound off</span>
+        </article>
+        <article class="reel reel--tall">
+          <video data-src="reels/burgeronaa.mp4" poster="reels/burgeronaa.jpg" muted loop playsinline preload="none"></video>
+          <div class="reel__meta"><strong>Burgeronaa</strong><span>Food ad</span></div>
+          <span class="reel__sound">Sound off</span>
+        </article>
+        <article class="reel reel--wide">
+          <video data-src="reels/masjid.mp4" poster="reels/masjid.jpg" muted loop playsinline preload="none"></video>
+          <div class="reel__meta"><strong>Masjid</strong><span>Architecture reel</span></div>
+          <span class="reel__sound">Sound off</span>
+        </article>
+        <article class="reel reel--tall">
+          <video data-src="reels/solmira-models.mp4" poster="reels/solmira-models.jpg" muted loop playsinline preload="none"></video>
+          <div class="reel__meta"><strong>Solmira</strong><span>Fashion film</span></div>
+          <span class="reel__sound">Sound off</span>
+        </article>
+        <article class="reel reel--wide">
+          <video data-src="reels/farmhouse.mp4" poster="reels/farmhouse.jpg" muted loop playsinline preload="none"></video>
+          <div class="reel__meta"><strong>SMD Farmhouse</strong><span>Real-estate film</span></div>
+          <span class="reel__sound">Sound off</span>
+        </article>
+        <article class="reel reel--tall">
+          <video data-src="reels/solmira-launch.mp4" poster="reels/solmira-launch.jpg" muted loop playsinline preload="none"></video>
+          <div class="reel__meta"><strong>Solmira</strong><span>Launch teaser</span></div>
+          <span class="reel__sound">Sound off</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= MANIFESTO SCRUB ================= -->
+    <section class="section-pad manifesto">
+      <div class="wrap">
+        <p class="manifesto__text" id="manifesto">
+          Most content is made to be posted. Mine is made to <span class="accent">perform.</span>
+          I write the hook before the shot list, cut for retention before aesthetics,
+          and read the numbers after every release — because beautiful film that
+          nobody finishes is just <span class="accent">expensive wallpaper.</span>
+        </p>
+        <div class="manifesto__sig">Syed Altaf Hussain — every frame has a job.</div>
+      </div>
+    </section>
+
+    <!-- ================= RESULTS TEASER ================= -->
+    <section class="section-pad" id="results">
+      <div class="wrap">
+        <div class="shell results">
+          <div class="shell__core results__core">
+            <div class="results__head">
+              <div>
+                <span class="eyebrow" data-reveal>Proof, not promises</span>
+                <h2 class="display-2" data-reveal style="margin-top:1.4rem">The camera is half the job. <em>The numbers are the other half.</em></h2>
+              </div>
+            </div>
+
+            <!-- EDIT: replace with your real Meta Ads totals (also edit meta-ads.html / js/ads.js) -->
+            <div class="stat-grid" data-reveal>
+              <div class="stat">
+                <span class="stat__num">₹<span data-count="4.6" data-decimals="1">0</span><sub>&nbsp;lakh</sub></span>
+                <span class="stat__label">Meta ad spend managed</span>
+              </div>
+              <div class="stat stat--gold">
+                <span class="stat__num">₹<span data-count="41.8" data-decimals="1">0</span><sub>&nbsp;lakh</sub></span>
+                <span class="stat__label">Revenue attributed to campaigns</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num"><span data-count="9.1" data-decimals="1">0</span><sub>&nbsp;× ROAS</sub></span>
+                <span class="stat__label">Blended return on ad spend</span>
+              </div>
+            </div>
+
+            <div class="results__foot">
+              <p class="results__note">Creative, targeting and budget decisions made from inside the edit suite — when the person cutting the ad is the person reading the dashboard, the feedback loop is one desk long.</p>
+              <a class="btn btn--ghost" href="meta-ads.html" data-reveal>See the full breakdown <span class="btn__orb">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS STACK ================= -->
+    <section class="section-pad" id="process">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>The method</span>
+        <h2 class="display-2" data-reveal style="margin:1.4rem 0 4rem">Strategy in. <em>Revenue out.</em></h2>
+
+        <div class="stack">
+          <div class="stack__card">
+            <div class="stack__num">01</div>
+            <div>
+              <h3>Strategy before the shot list</h3>
+              <p>Who is this for, what do they scroll past, and what would stop their thumb? Positioning, hooks and content pillars come first — the camera bag stays closed until the answer is sharp.</p>
+              <div class="stack__list"><span>Audience research</span><span>Hook writing</span><span>Content pillars</span><span>Offer angle</span></div>
+            </div>
+          </div>
+          <div class="stack__card">
+            <div class="stack__num">02</div>
+            <div>
+              <h3>Production — cinema and AI, blended</h3>
+              <p>Gimbal walkthroughs, drone exteriors and interviews shot on real glass. Then the AI pipeline: generative shots, extensions and worlds a location scout could never book.</p>
+              <div class="stack__list"><span>4K cinema camera</span><span>Drone &amp; gimbal</span><span>Generative video</span><span>Virtual sets</span></div>
+            </div>
+          </div>
+          <div class="stack__card">
+            <div class="stack__num">03</div>
+            <div>
+              <h3>The edit — cut for retention</h3>
+              <p>Pacing decisions are made against watch-time graphs, not gut feel. Sound design, kinetic captions and colour that survives a phone screen in daylight.</p>
+              <div class="stack__list"><span>Retention-first pacing</span><span>Sound design</span><span>Kinetic captions</span><span>Colour grade</span></div>
+            </div>
+          </div>
+          <div class="stack__card">
+            <div class="stack__num">04</div>
+            <div>
+              <h3>Release, read, recut</h3>
+              <p>Content ships, dashboards get read, winners get scaled. Hooks that die in three seconds get replaced by the ones that don't — every release makes the next one smarter.</p>
+              <div class="stack__list"><span>Distribution plan</span><span>Creative testing</span><span>Scale the winners</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CLIENTS ================= -->
+    <section class="section-pad" id="clients" style="padding-bottom:0">
+      <div class="wrap" style="text-align:center">
+        <span class="eyebrow" data-reveal>Clientele</span>
+        <h2 class="display-2" data-reveal style="margin:1.4rem auto 0; max-width:52rem">Brands that trusted me <em>with their story.</em></h2>
+      </div>
+
+      <!-- EDIT: extend with new client names as they come -->
+      <div class="clients__wall" aria-label="Client list">
+        <div class="clients__track">
+          <span>PRESTIGE GROUP</span><span>GODREJ PROPERTIES</span><span>ZINDA TILISMATH</span>
+          <span>LAGNAM</span><span>MAQDOOM BROTHERS</span><span>EFFULGENCE</span><span>SOLMIRA</span>
+          <span>PRESTIGE GROUP</span><span>GODREJ PROPERTIES</span><span>ZINDA TILISMATH</span>
+          <span>LAGNAM</span><span>MAQDOOM BROTHERS</span><span>EFFULGENCE</span><span>SOLMIRA</span>
+        </div>
+        <div class="clients__track clients__track--reverse">
+          <span>RESIDE</span><span>KN CONVENTION</span><span>A.M INFRA</span><span>FLIVV DEVELOPERS</span>
+          <span>TASKFORCE INTERIORS</span><span>BURGERONAA</span><span>SOLAR OASIS</span>
+          <span>RESIDE</span><span>KN CONVENTION</span><span>A.M INFRA</span><span>FLIVV DEVELOPERS</span>
+          <span>TASKFORCE INTERIORS</span><span>BURGERONAA</span><span>SOLAR OASIS</span>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="shell quote-shell" data-reveal>
+          <div class="shell__core quote">
+            <!-- EDIT: swap in a real client quote + name -->
+            <blockquote>“The walkthrough film did what three months of listings couldn't — buyers arrived already sold on the property.”</blockquote>
+            <cite><strong>Client name</strong>Founder, Real Estate — Hyderabad</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OUTRO CTA ================= -->
+    <section class="outro">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>Next project</span>
+        <h2 data-reveal>Let's make the thing your <em>competitors screenshot.</em></h2>
+        <p class="lede" data-reveal style="margin:0 auto">One film, one campaign, or a full content engine — it starts with a 20-minute call.</p>
+        <div class="outro__ctas" data-reveal>
+          <a class="btn btn--amber" href="mailto:altafsyed2002@gmail.com">Book a call <span class="btn__orb">↗</span></a>
+          <a class="btn btn--ghost" href="meta-ads.html">See the results <span class="btn__orb">▸</span></a>
+        </div>
+        <p class="outro__mail" data-reveal><a href="mailto:altafsyed2002@gmail.com">altafsyed2002@gmail.com</a></p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap">
+        <span>© 2026 Syed Altaf Hussain — Hyderabad, India</span>
+        <div class="footer__links">
+          <!-- EDIT: add your real profile URLs -->
+          <a href="#" rel="noopener">Instagram</a>
+          <a href="#" rel="noopener">YouTube</a>
+          <a href="#" rel="noopener">LinkedIn</a>
+        </div>
+        <span>Filmmaker · Editor · Content Strategist</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

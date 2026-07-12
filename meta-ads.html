@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meta Ads Results — Syed Altaf Hussain</title>
+  <meta name="description" content="Meta Ads performance breakdown — spend, revenue and ROAS from campaigns where the editor and the media buyer are the same person." />
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <meta property="og:title" content="Meta Ads Results — Syed Altaf Hussain" />
+  <meta property="og:description" content="Spend, revenue and ROAS from campaigns where the editor and the media buyer are the same person." />
+  <meta property="og:image" content="https://syedi786.github.io/img/og.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="grain"></div>
+  <div class="mesh"></div>
+
+  <div class="playhead"><div class="playhead__bar" id="playheadBar"></div></div>
+
+  <nav class="nav" id="nav">
+    <a class="nav__logo" href="index.html">SYED ALTAF<em>&nbsp;HUSSAIN</em></a>
+    <div class="nav__links">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#process">Process</a>
+      <a href="index.html#clients">Clients</a>
+    </div>
+    <a class="nav__cta" href="mailto:altafsyed2002@gmail.com">Start a project</a>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#process">Process</a>
+    <a href="index.html#clients">Clients</a>
+    <a href="mailto:altafsyed2002@gmail.com">Start a project</a>
+  </div>
+
+  <main>
+
+    <!-- ================= CASE HERO ================= -->
+    <section class="case-hero">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>Meta Ads — performance breakdown</span>
+        <h1 data-reveal>Every rupee, <em>accounted for.</em></h1>
+        <p class="lede" data-reveal>
+          The ads I cut are the ads I buy media for. Same desk, same dashboard —
+          creative decisions made from performance data, not taste alone.
+          Here is what that looked like over the last six months.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= KPI TILES ================= -->
+    <section style="padding: 3rem 0 0">
+      <div class="wrap">
+        <div class="kpi-grid" data-reveal>
+          <div class="shell"><div class="shell__core kpi-core">
+            <div class="stat">
+              <span class="stat__num">₹<span data-count="4.6" data-decimals="1">0</span><sub>&nbsp;lakh</sub></span>
+              <span class="stat__label">Total ad spend</span>
+            </div>
+          </div></div>
+          <div class="shell"><div class="shell__core kpi-core">
+            <div class="stat stat--gold">
+              <span class="stat__num">₹<span data-count="41.8" data-decimals="1">0</span><sub>&nbsp;lakh</sub></span>
+              <span class="stat__label">Revenue generated</span>
+            </div>
+          </div></div>
+          <div class="shell"><div class="shell__core kpi-core">
+            <div class="stat">
+              <span class="stat__num"><span data-count="9.1" data-decimals="1">0</span><sub>&nbsp;× ROAS</sub></span>
+              <span class="stat__label">Blended return on ad spend</span>
+            </div>
+          </div></div>
+          <div class="shell"><div class="shell__core kpi-core">
+            <div class="stat">
+              <span class="stat__num"><span data-count="1240" data-decimals="0">0</span></span>
+              <span class="stat__label">Qualified leads · ₹371 avg. cost per lead</span>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SPEND VS REVENUE CHART ================= -->
+    <section style="padding: 4rem 0 0">
+      <div class="wrap">
+        <div class="shell chart-shell" data-reveal>
+          <div class="shell__core chart-core">
+            <div class="chart-head">
+              <div>
+                <h3>Spend vs revenue, month by month</h3>
+                <p>₹ lakh · six-month window · hover any bar for exact figures</p>
+              </div>
+              <div class="legend" id="chartLegend"></div>
+            </div>
+            <div class="chart-svg-wrap" id="chartWrap">
+              <div class="chart-tip" id="chartTip"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FUNNEL ================= -->
+    <section style="padding: 4rem 0 0">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>From impression to closure</span>
+        <div class="funnel" data-reveal>
+          <div><strong data-fmt="2.4M">2.4M</strong><small>Impressions</small></div>
+          <div><strong>68.4K</strong><small>Link clicks</small></div>
+          <div><strong>1,240</strong><small>Qualified leads</small></div>
+          <div><strong>312</strong><small>Site visits / demos</small></div>
+          <div><strong>47</strong><small>Closures attributed</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CAMPAIGN TABLE ================= -->
+    <section style="padding: 4rem 0 0">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>Campaign by campaign</span>
+        <div class="shell" data-reveal style="margin-top:1.4rem">
+          <div class="shell__core table-core">
+            <table class="camp-table" id="campTable"></table>
+          </div>
+        </div>
+        <p class="case-note">Figures are aggregated from client ad accounts I planned, cut creative for, and managed end-to-end. Detailed dashboards and account screenshots available on request — with client permission, always.</p>
+      </div>
+    </section>
+
+    <!-- ================= WHY IT WORKS ================= -->
+    <section class="section-pad">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>Why the numbers behave</span>
+        <h2 class="display-2" data-reveal style="margin:1.4rem 0 3rem">The unfair advantage is <em>one desk.</em></h2>
+        <div class="shell" data-reveal>
+          <div class="shell__core method-core">
+            <div>
+              <h4>The editor reads the dashboard</h4>
+              <p>When a hook dies at second three, I don't file a ticket to a creative team — I recut it that evening. The iteration loop is hours, not weeks.</p>
+            </div>
+            <div>
+              <h4>Creative volume without burnout</h4>
+              <p>The AI pipeline produces hook and format variants at a pace a traditional shoot can't match, so every campaign launches as a test, never a bet.</p>
+            </div>
+            <div>
+              <h4>Spend follows evidence</h4>
+              <p>Budget moves to whichever creative and audience the data has already endorsed. Losers are killed early; winners are scaled while they're still fresh.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OUTRO ================= -->
+    <section class="outro" style="padding-top:0">
+      <div class="wrap">
+        <h2 data-reveal>Want this graph for <em>your brand?</em></h2>
+        <div class="outro__ctas" data-reveal>
+          <a class="btn btn--amber" href="mailto:altafsyed2002@gmail.com">Book a call <span class="btn__orb">↗</span></a>
+          <a class="btn btn--ghost" href="index.html#work">Back to the work <span class="btn__orb">▸</span></a>
+        </div>
+        <p class="outro__mail" data-reveal><a href="mailto:altafsyed2002@gmail.com">altafsyed2002@gmail.com</a></p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap">
+        <span>© 2026 Syed Altaf Hussain — Hyderabad, India</span>
+        <div class="footer__links">
+          <a href="index.html">Portfolio</a>
+          <a href="index.html#clients">Clients</a>
+        </div>
+        <span>Filmmaker · Editor · Content Strategist</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/ads.js"></script>
+</body>
+</html>
