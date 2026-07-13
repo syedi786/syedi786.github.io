@@ -583,6 +583,56 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 800; }
   border: 1px solid var(--line); border-radius: 999px; padding: 0.35rem 0.85rem;
 }
 
+/* ---------- reel outcome stat ---------- */
+
+.reel__stat {
+  font-style: normal; font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.06em; color: var(--amber);
+  margin-top: 0.35rem;
+  display: inline-flex; align-items: center; gap: 0.4rem;
+}
+.reel__stat::before { content: ""; width: 4px; height: 4px; border-radius: 50%; background: var(--amber); }
+
+/* ---------- ways to work ---------- */
+
+.engage-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem; align-items: stretch;
+}
+.shell--feature { border-color: rgba(229, 180, 84, 0.35); }
+.engage-card {
+  padding: 2.1rem 1.9rem; height: 100%;
+  display: flex; flex-direction: column; gap: 1rem;
+}
+.engage-card h3 { font-size: 1.35rem; letter-spacing: -0.01em; }
+.engage-card > p { color: var(--ink-muted); font-size: 0.92rem; }
+.engage-card ul { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; margin: 0.4rem 0; }
+.engage-card li {
+  color: var(--ink-muted); font-size: 0.88rem;
+  display: flex; align-items: baseline; gap: 0.6rem;
+}
+.engage-card li::before { content: "—"; color: var(--amber); flex: none; }
+.engage-card__fit {
+  font-size: 0.76rem; color: var(--ink-faint);
+  border-top: 1px solid var(--line); padding-top: 1rem;
+  margin-top: auto;
+}
+.engage-card .btn { align-self: flex-start; font-size: 0.84rem; }
+
+/* ---------- testimonials grid ---------- */
+
+.quotes-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem; align-items: stretch;
+}
+.quote--card {
+  text-align: left; align-items: flex-start; gap: 1.2rem;
+  padding: 1.9rem 1.7rem; height: 100%;
+  justify-content: space-between;
+}
+.quote--card blockquote { font-size: 1.08rem; line-height: 1.55; }
+.quote--card cite { align-items: flex-start; text-align: left; }
+
 /* ---------- clients ---------- */
 
 .clients__wall {
@@ -741,6 +791,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 800; }
   .nav__burger { display: block; }
   .stat-grid { grid-template-columns: 1fr; }
   .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+  .engage-grid, .quotes-grid { grid-template-columns: 1fr; }
   .stack__card { grid-template-columns: 1fr; min-height: 0; gap: 0.5rem; }
   .method-core { grid-template-columns: 1fr; }
   .funnel { grid-template-columns: 1fr 1fr; }
