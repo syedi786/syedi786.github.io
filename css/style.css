@@ -307,23 +307,23 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 800; }
 }
 .hero__bg::before {
   content: ""; position: absolute; inset: 0;
-  background: radial-gradient(46rem 40rem at 82% 62%, rgba(229, 180, 84, 0.1), transparent 65%);
+  background: radial-gradient(46rem 40rem at 50% 62%, rgba(229, 180, 84, 0.09), transparent 65%);
 }
 .hero__bg img {
-  position: absolute; right: clamp(-3rem, -2vw, 0px); bottom: 0;
-  height: 88%; width: auto; max-width: 52vw;
-  object-fit: contain; object-position: bottom right;
-  filter: grayscale(0.25) contrast(1.06) brightness(0.78) sepia(0.22);
-  opacity: 0.85;
-  -webkit-mask-image: radial-gradient(72% 78% at 52% 42%, #000 30%, transparent 74%);
-  mask-image: radial-gradient(72% 78% at 52% 42%, #000 30%, transparent 74%);
-  transform: none;
+  position: absolute; left: 50%; bottom: 0;
+  transform: translateX(-50%);
+  height: 94%; width: auto; max-width: 92vw;
+  object-fit: contain; object-position: bottom center;
+  filter: grayscale(0.25) contrast(1.06) brightness(0.72) sepia(0.22);
+  opacity: 0.8;
+  -webkit-mask-image: radial-gradient(74% 82% at 50% 40%, #000 32%, transparent 76%);
+  mask-image: radial-gradient(74% 82% at 50% 40%, #000 32%, transparent 76%);
 }
 .hero__bg::after {
   content: ""; position: absolute; inset: 0;
   background:
-    radial-gradient(60rem 44rem at 38% 40%, rgba(5, 5, 5, 0.5), transparent 70%),
-    linear-gradient(180deg, rgba(5, 5, 5, 0.55), transparent 30%, transparent 60%, var(--bg) 96%);
+    radial-gradient(56rem 34rem at 50% 58%, rgba(5, 5, 5, 0.5), transparent 72%),
+    linear-gradient(180deg, rgba(5, 5, 5, 0.6), transparent 30%, transparent 60%, var(--bg) 96%);
 }
 .hero__inner { width: min(1180px, calc(100% - 3rem)); margin: 0 auto; }
 .hero h1 {
@@ -381,7 +381,11 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 800; }
 .work__head { margin-bottom: 4rem; display: flex; flex-direction: column; gap: 1.4rem; align-items: flex-start; }
 
 .strip { position: relative; }
-.strip__viewport { overflow: hidden; }
+.strip__viewport {
+  overflow: hidden;
+  scrollbar-width: none; -ms-overflow-style: none;
+}
+.strip__viewport::-webkit-scrollbar { display: none; }
 .strip__track {
   display: flex; gap: clamp(1.2rem, 2.5vw, 2.2rem);
   padding: 0 max(1.5rem, calc((100vw - 1240px) / 2));
@@ -804,6 +808,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 800; }
 @media (max-width: 560px) {
   .kpi-grid { grid-template-columns: 1fr; }
   .hero__meta { gap: 1.2rem; flex-wrap: wrap; padding: 0 1.5rem; }
+  .reel { height: clamp(280px, 48vh, 420px); }
+  .hero__bg img { height: 84%; max-width: 130vw; opacity: 0.7; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -307,12 +307,5 @@ if (reelrow) {
   }, true);
 }
 
-/* ---------- hero background parallax ---------- */
-const heroBgImg = document.querySelector(".hero__bg img");
-if (heroBgImg && !reduceMotion) {
-  gsap.to(heroBgImg, {
-    yPercent: 12,
-    ease: "none",
-    scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true },
-  });
-}
+/* Hero portrait is centered via translateX(-50%); no parallax tween on it —
+   GSAP's transform would fight the centering. */
